@@ -1,0 +1,14 @@
+using namespace std;
+#include <iostream>
+#include <iomanip> 
+#include<cmath>
+int main()
+{
+	double x, p;
+	cin >> x >> p;
+	double nbedis=p/(1-(x/100));
+ 
+ 
+	cout << fixed<<setprecision(2)<<nbedis;
+ 
+}
