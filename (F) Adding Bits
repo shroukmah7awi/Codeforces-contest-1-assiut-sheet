@@ -1,0 +1,15 @@
+using namespace std;
+#include <iostream>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+int main()
+{
+    int a, b;
+    cin >> a >> b;
+    int z = a ^ b;
+    cout << z ;
+  
+    
+     
+}
