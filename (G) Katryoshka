@@ -1,0 +1,25 @@
+#include <iostream>
+#include <algorithm>
+ 
+using namespace std;
+ 
+int main() {
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+ 
+    long long n, m, k;
+    cin >> n >> m >> k;
+ 
+    long long count_with_mouths = min({n, m, k});
+ 
+    long long remaining_n = n - count_with_mouths;
+    long long remaining_k = k - count_with_mouths;
+ 
+    long long count_without_mouths = min(remaining_n / 2, remaining_k);
+ 
+    long long total_katryoshkas = count_with_mouths + count_without_mouths;
+ 
+    cout << total_katryoshkas << endl;
+ 
+    return 0;
+}
