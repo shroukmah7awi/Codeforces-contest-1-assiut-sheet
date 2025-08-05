@@ -1,0 +1,28 @@
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+int main()
+{
+    int n;
+    cin >> n;
+ 
+ 
+    int x = n % 10;
+    int y = n / 10;
+    if (x % y == 0 )
+    {
+        cout << "YES";
+    }
+    else if (y % x == 0)
+    {
+        cout << "YES";
+    }
+    else
+    {
+        cout << "NO";
+    }
+}
