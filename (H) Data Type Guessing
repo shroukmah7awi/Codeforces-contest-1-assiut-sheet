@@ -1,0 +1,29 @@
+using namespace std;
+#include <iostream>
+#include <algorithm>
+#include <vector>
+#include <iomanip> 
+#include<cmath>
+#include<bitset>
+int main()
+{
+    long long n, k, a;
+    cin >> n >> k >> a;
+    const long long INT_32BIT_MAX = 2147483647LL;
+    if ((n * k) % a == 0 && ((n * k) / a)<= INT_32BIT_MAX)
+    {
+        cout << "int";
+    }
+    
+    else if ((n * k) % a == 0 && ((n * k) / a) > INT_32BIT_MAX)
+    {
+        cout << "long long";
+    }
+ 
+    else if ((n * k) % a != 0)
+    {
+        cout << "double";
+    }
+   
+}
+   
